@@ -1,18 +1,17 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="views/styles/index-style.css" />
-    <!-- google fonts -->
-    <title>R&M Cases</title>
+    <link rel="stylesheet" href="../views/styles/login.css" />
+    <title>Sign in - R&M Cases</title>
   </head>
   <body>
     <header>
       <nav id="login-container">
         <ul>
           <li>
-            <a href="">
+            <a href="../index.html">
               <img src="" alt="R&M Logo" />
             </a>
           </li>
@@ -30,113 +29,48 @@
               </svg>
             </a>
           </li>
-          <!-- <li>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bag-dash" viewBox="0 0 16 16">
-                        <path fill-rule="evenodd" d="M5.5 10a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1H6a.5.5 0 0 1-.5-.5"/>
-                        <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1z"/>
-                    </svg>
-                </li> -->
         </ul>
       </nav>
-      <div id="greet-container">
-        <aside>Bienvenido a nuestra tienda</aside>
-      </div>
-      <div id="stock-container">
-        <aside>¡Stock limitado!</aside>
-      </div>
-      <div id="banner-container">
-        <div>
-          <img src="views/img/banner.jpg" alt="banner" />
-        </div>
-      </div>
     </header>
     <main>
-      <div id="products-container">
+      <div id="sign-in-container">
         <div id="title">
-          <h1>Productos</h1>
+          <h2>Sign in</h2>
         </div>
-        <div class="product-card">
-          <a href="../PaginaVenta/pages/product-details.php">
-            <img src="views/img/img.jpg" alt="funda 1" />
-          </a>
-          <div class="product-price">
-            <p>$300 MX</p>
-          </div>
+        <div id="form-container">
+          <form action="">
+            <div class="inputs">
+              <label for="email">
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="Email"
+                />
+              </label>
+            </div>
+            <div class="inputs">
+              <label for="password">
+                <input
+                  type="password"
+                  name="password"
+                  id="password"
+                  placeholder="Password"
+                />
+              </label>
+            </div>
+            <div class="sign-in-up-button">
+              <button type="submit">Sign in</button>
+            </div>
+            <div id="forgot-password-link">
+              <a href="">Forgot password?</a>
+            </div>
+            <div id="line"></div>
+            <div class="sign-in-up-button">
+              <button type="submit">Create account</button>
+            </div>
+          </form>
         </div>
-        <div class="product-card">
-          <a href="">
-            <img src="views/img/img.jpg" alt="funda 2" />
-          </a>
-          <div class="product-price">
-            <p>$300 MX</p>
-          </div>
-        </div>
-        <div class="product-card">
-          <a href="">
-            <img src="views/img/img.jpg" alt="funda 3" />
-          </a>
-          <div class="product-price">
-            <p>$300 MX</p>
-          </div>
-        </div>
-        <div class="product-card">
-          <a href="">
-            <img src="views/img/img.jpg" alt="funda 4" />
-          </a>
-          <div class="product-price">
-            <p>$300 MX</p>
-          </div>
-        </div>
-        <div class="product-card">
-          <a href="">
-            <img src="views/img/img.jpg" alt="funda 5" />
-          </a>
-          <div class="product-price">
-            <p>$300 MX</p>
-          </div>
-        </div>
-        <div class="product-card">
-          <a href="">
-            <img src="views/img/img.jpg" alt="funda 6" />
-          </a>
-          <div class="product-price">
-            <p>$300 MX</p>
-          </div>
-        </div>
-        <div class="product-card">
-          <a href="">
-            <img src="views/img/img.jpg" alt="funda 7" />
-          </a>
-          <div class="product-price">
-            <p>$300 MX</p>
-          </div>
-        </div>
-        <div class="product-card">
-          <a href="">
-            <img src="views/img/img.jpg" alt="funda 8" />
-          </a>
-          <div class="product-price">
-            <p>$300 MX</p>
-          </div>
-        </div>
-      </div>
-      <div id="pagination-list">
-        <ul>
-          <li>
-            <a href=""> 1 </a>
-          </li>
-          <li>
-            <a href=""> 2 </a>
-          </li>
-          <!-- add the chevron right icon ">" -->
-          <!-- <li> 
-                    <a href="">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
-                            <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"/>
-                        </svg>
-                    </a>
-                </li> -->
-        </ul>
       </div>
     </main>
     <footer>

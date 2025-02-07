@@ -1,0 +1,116 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header Styles */
+#login-container {
+  box-sizing: border-box;
+  background-color: #ffffff;
+  padding: 2.5em;
+  display: flex;
+  justify-content: center;
+}
+#login-container ul {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  font-size: 20px;
+  width: 90%;
+}
+#login-container li {
+  display: inline-block;
+}
+#login-container li a {
+  text-decoration: none;
+  color: #000000;
+}
+#login-container svg {
+  width: 30px;
+  height: 30px;
+}
+/* Main Styles */
+main {
+  text-align: center;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  background-color: red;
+}
+#title {
+  padding: 1.3em;
+}
+#form-container {
+  display: flex;
+  justify-content: center;
+}
+#form-container form {
+  /*   background-color: red; */
+  padding: 2.5em;
+  border: 1px solid #0000002f;
+}
+.inputs {
+  margin-bottom: 1em;
+}
+.sign-in-up-button {
+  padding: 0.8em;
+}
+#forgot-password-link {
+  padding: 1em;
+}
+#line {
+  border-top: 1px solid #0000002f;
+}
+/* FOOTER Styles */
+footer {
+  border-top: 0.5px solid #0000002f;
+  width: 100%;
+
+  max-height: 500px;
+}
+
+footer div {
+  /* background-color: #7ec01cd4; */
+  position: relative;
+  width: 100%;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  padding: 2em;
+}
+
+#contact-us a {
+  text-decoration: none;
+  color: #000000;
+}
+
+#contact-us li {
+  margin-right: 10px;
+}
+
+#contact-us p,
+#payment-method p {
+  font-family: "Kanit", serif;
+  font-weight: 300;
+  font-size: 19px;
+  margin-bottom: 1em;
+}
+
+#contact-us,
+#payment-method {
+  display: block;
+}
+#contact-us li {
+  display: inline-block;
+}
+
+#rights-reserved ul {
+  list-style: none;
+}
+
+#rights-reserved li {
+  justify-content: center;
+  margin-top: 1.5em;
+}
