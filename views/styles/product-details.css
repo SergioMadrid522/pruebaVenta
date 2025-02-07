@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,400;1,100&family=Kanit:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital@1&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    border-bottom: .5px solid grey;
+    padding: 3em;
+    text-align: center;
+}
+
+#logo a {
+    text-decoration: none;
+    color: #000000;
+}
+
+main {
+    /* background-color: antiquewhite; */
+    justify-content: center;
+    width: 100%;
+    /* display: flexbox; */
+    display: flex;
+    gap:50px;
+}
+
+#product-img {
+    /* background-color: red; */
+    position: relative;
+    text-align: center;
+    width: 450px;
+    
+}
+
+#product-img img {
+    background-color: #0000005c;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+#product-container {
+    /* background-color: blue; */
+    width: 28%;
+    box-sizing: border-box;
+}
+
+#product-title {
+    /* background-color: red; */
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+#product-title h1{ 
+    /* background-color: green; */
+    font-family: "Kanit", serif;
+    font-weight: 500;
+    font-style: italic;
+    padding: 40px 30px 0 ;
+    width: 100%;
+
+}
+#price-container {
+    /* background-color: red; */
+    font-family: "Fira Sans", sans-serif;/*Otro tipo de letra*/
+    font-family: "Kanit", serif;
+    font-weight: 400;
+    font-style: italic;
+    margin-left: 50px;
+}
+#payment-button {
+    /* background-color: red; */
+    text-align: center;
+    width: 100%;
+    margin-top: 40px;
+}
+#payment-button button {
+    font-family: Helvetica, Arial, "Liberation Sans", sans-serif;
+    background-color: #ffc439;
+    font-size: 16px;
+    width: 50%;
+    min-width: 40%;
+    border: .5px solid #0000002f;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: .5em;
+}
+
+#payment-button button:hover {
+    background-color: #e6b134dc;
+    transition: .2s ease-in;
+}
+
+#payment-button #pay {
+    color: #003087;
+    font-size: 18px;
+    /* font-style: bold; */
+}
+
+#payment-button #pal {
+    color: #009cde;
+}
+
+#description-container p {
+    font-family: "Fira Sans", serif;
+    font-weight: 650;
+    font-style: italic;
+    font-size: 16px;
+}
+
+#description-container ul{
+    font-family: "Fira Sans", serif;
+    font-weight: 100;
+    font-style: italic;
+    font-size: 16px;
+}
+
+#description-container {
+    margin-left: 15%;
+    padding: 20px;
+}
+#description-container ul {
+    padding-left: 2.5em;
+}
+#description-container li {
+    margin-bottom: 10px;
+}
+
+#product-title,
+#price-container,
+#description-container p {
+    margin-bottom: 10px;
+}
+
+#related-products-carousel {
+    /* background-color: red; */
+    width: 100%;
+    text-align: center;
+}
+
+.product-card {
+    /* border: 1px solid #003087; */
+    display: inline-block;
+    width: 300px;
+    padding: 50px;
+}
+
+.product-card:hover {
+    box-shadow: 3px 3px 15px #0000005c;
+    transition: .3s ease;
+}
+
+#related-products-carousel img {    
+    object-fit: cover;
+    width: 200px;
+    height: 150px;
+}
+.product-card a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.product-card h3 {
+    font-family: "Roboto", serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 16px;
+}
+
+footer {
+    border-top: .5px solid #0000002f;
+    width: 100%;
+}
+
+footer div {
+    position: relative;
+    width: 100%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    padding: 2em;
+}
+
+#contact-us a {
+    text-decoration: none;
+    color: #000000;
+}
+
+#contact-us  li {
+    margin-right: 10px;
+} 
+
+#contact-us p, 
+#payment-method p {
+    font-family: "Kanit", serif;
+    font-weight: 300;
+    font-size: 19px;
+    margin-bottom: 1em;
+}
+
+#contact-us,
+#payment-method {
+    display: block;
+
+}
+
+#contact-us li {
+    display: inline-block;
+}
+
+#rights-reserved ul {
+    list-style: none;
+}
+
+#rights-reserved li {
+    justify-content: center;
+    margin-top: 1.5em;
+}
