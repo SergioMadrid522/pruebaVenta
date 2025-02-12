@@ -1,0 +1,152 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+  
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+  
+/* Header Styles */
+nav {
+    box-sizing: border-box;
+    background-color: #ffffff;
+    padding: 2.5em;
+    display: flex;
+    justify-content: center;
+}
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    font-size: 20px;
+    width: 90%;
+}
+nav ul li {
+    display: inline-block;
+}
+nav ul li a {
+    text-decoration: none;
+    color: #000000;
+}
+  
+/* Main Styles */
+main {
+    margin: auto auto;
+}
+#wrap {
+    display: flex;
+    border: 1px solid #0000002f;
+    border-radius: 10px;
+    position: relative;
+}
+#recover-pass-container {
+    background-color: transparent;
+    text-align: center;
+    padding: 2em;
+    width: 500px;
+}
+#title {
+    padding-bottom: 1.5em;
+    width: 100%;
+}
+#form-container {
+    padding: 1.5em;
+    /* background-color: red; */
+}
+.email-input input {
+    padding: .5em;
+    font-size: 16px;
+    width: 100%;
+    margin-bottom: 1em;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+}
+.email-input input[type="email"]:focus {
+    outline: 0;
+}
+.recover-pass-button {
+    padding: 1em;
+}
+.recover-pass-button button {
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 18px;
+    padding: 5px;
+    width: 75%;
+    letter-spacing: .5px;
+    border:  1px solid #0000002f;
+}
+  /* FOOTER Styles */
+footer {
+    border-top: .5px solid #0000002f;
+    text-align: center;
+}
+  footer div {
+    width: 100%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    padding: 2em;
+  }
+  #contact-us a {
+    text-decoration: none;
+    color: #000000;
+  }
+  #contact-us ul{ 
+    width: 100%;
+  }
+  #contact-us li {
+    margin-right: 15px;
+    display: inline-block;
+  } 
+  #contact-us p {
+    font-family: "Kanit", serif;
+    font-weight: 300;
+    font-size: 19px;
+    margin-bottom: 1em;
+  }
+  #contact-us,
+  #payment-method {
+    display: block;
+  }
+  
+  #rights-reserved ul {
+    list-style: none;
+  }
+  #rights-reserved li {
+    margin-top: 1.5em;
+  }
+@media screen and (max-width:900px) {
+    #recover-pass-container {
+        width: 500px;
+    }
+    #recover-pass-container {
+        border-right: none;
+    }
+}
+@media screen and (max-width: 600px) {
+    #recover-pass-container {
+    width: 300px;
+    }
+    footer div {
+    display: block;
+    padding: .5em;
+    }
+    #contact-us li {
+    margin: 1.8px;
+    }
+    .recover-pass-button button {
+    width: 100%;
+    }
+    #rights-reserved ul li{
+        margin: 0;
+    }
+}
+  
+  
