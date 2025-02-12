@@ -36,11 +36,7 @@ html, body {
 
 /* Main Styles */
 main {
-  width: auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex: 1;
+  margin: auto auto;
 }
 #wrap {
   display: flex;
@@ -89,15 +85,13 @@ main {
   letter-spacing: .5px;
   border:  1px solid #0000002f;
 }
-.sign-in-up-button button:last-child {
-
-  margin-top: 30px;
-}
-
-#forgot-password-link a {
+#forgot-password-link a,
+.sign-in-up-button a { 
   text-decoration: none;
   color: #168fe5;
+  font-size: 18px;
 }
+
 #line {
   outline: 1px solid #0000002f;
   margin-top: 1em;
@@ -185,6 +179,9 @@ footer div {
   }
   .sign-in-up-button button {
     width: 100%;
+  }
+  #rights-reserved ul li{
+    margin: 0;
   }
 }
 
