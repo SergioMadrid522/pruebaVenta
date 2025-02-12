@@ -229,5 +229,45 @@ footer div {
 
 #rights-reserved li {
     justify-content: center;
-    margin-top: 1.5em;
+    margin-top: .5em;
 }
+
+@media screen and (max-width:900px) {
+    #sign-in-container {
+      width: 500px;
+    }
+    #image-cover, 
+    #image-cover img {
+      display: none;
+    }
+    #sign-in-container {
+      border-right: none;
+    }
+    #rights-reserved ul li{
+        margin-top: 0.5em;
+    }
+  }
+  @media screen and (max-width: 600px) {
+    #sign-in-container {
+      width: 300px;
+    }
+    #image-cover {
+      display: none;
+      width: 5px ;
+    }
+    #image-cover img {
+      display: none;
+      width: 250px;
+    }
+    footer div {
+      display: block;
+      padding: .5em;
+    }
+    #contact-us li {
+      margin: 1.8px;
+    }
+    .sign-in-up-button button {
+      width: 100%;
+    }
+
+  }
