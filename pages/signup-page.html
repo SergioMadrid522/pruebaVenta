@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../views/styles/login.css" />
-    <title>Sign in - R&M Cases</title>
+    <link rel="stylesheet" href="../views/styles/signup.css" />
+    <title>Sign up - R&M Cases</title>
   </head>
   <body>
     <header>
@@ -29,10 +29,10 @@
       <div id="wrap">
         <div id="sign-in-container">
           <div id="title">
-            <h2>Iniciar Sesión</h2>
+            <h2>Registrarse</h2>
           </div>
           <div id="form-container">
-            <form action="" method="post">
+            <form action="">
               <div class="inputs">
                 <label for="email">
                   <input type="email" name="email" id="email" placeholder="Email" />
@@ -43,15 +43,16 @@
                   <input type="password" name="password" id="password" placeholder="Contraseña" />
                 </label>
               </div>
-              <div class="sign-in-up-button">
-                <button type="submit">Iniciar Sesión</button>
+              <div class="inputs">
+                <label for="repeat-password">
+                  <input type="password" name="repeat-password" id="repeat-password" placeholder="Repetir contraseña" />
+                </label>
               </div>
-              <div id="forgot-password-link">
-                <a href="forgot-password.html">¿Olvidaste tu contraseña?</a>
+              <div class="sign-up-button">
+                <button type="submit">Registrarse</button>
               </div>
-              <div id="line"></div>
               <div class="sign-in-up-button">
-                  <a href="signup-page.html">Crear Cuenta</a>
+                <a href="login.html">¿Ya tienes cuenta?</a>
               </div>
             </form>
           </div>
@@ -102,7 +103,6 @@
                     </li> -->
           </ul>
         </div>
-      
     </footer>
   </body>
 </html>

@@ -76,7 +76,7 @@ main {
 .sign-in-up-button {
   padding: 1em;
 }
-.sign-in-up-button button {
+.sign-up-button button {
   cursor: pointer;
   border-radius: 5px;
   font-size: 18px;
@@ -85,16 +85,10 @@ main {
   letter-spacing: .5px;
   border:  1px solid #0000002f;
 }
-#forgot-password-link a,
 .sign-in-up-button a { 
   text-decoration: none;
   color: #168fe5;
   font-size: 18px;
-}
-
-#line {
-  outline: 1px solid #0000002f;
-  margin-top: 1em;
 }
 #image-cover {
   text-align: center;
@@ -115,7 +109,7 @@ footer div {
   display: flex;
   text-align: center;
   justify-content: center;
-  padding: 2em;
+  padding: 1em;
 }
 #contact-us a {
   text-decoration: none;
@@ -146,6 +140,7 @@ footer div {
 #rights-reserved li {
   margin-top: 1.5em;
 }
+
 @media screen and (max-width:900px) {
   #sign-in-container {
     width: 500px;
@@ -180,8 +175,6 @@ footer div {
   .sign-in-up-button button {
     width: 100%;
   }
-  #rights-reserved ul li{
-    margin: 0;
-  }
 }
-
+  
+  
