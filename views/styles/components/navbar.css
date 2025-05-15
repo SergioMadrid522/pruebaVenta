@@ -1,0 +1,43 @@
+nav {
+  box-sizing: border-box;
+  background-color: #ffffff;
+  padding: 2.5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  font-size: 20px;
+  width: 90%;
+}
+nav li {
+  display: inline-block;
+}
+#user-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Kanit", serif;
+  font-weight: 350;
+  font-style: normal;
+  font-size: 18px;
+}
+.user {
+  font-size: 23px;
+  margin-right: 10px;
+}
+nav li a {
+  text-decoration: none;
+  color: #000000;
+}
+nav svg {
+  width: 30px;
+  height: 30px;
+}

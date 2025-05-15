@@ -1,0 +1,45 @@
+footer {
+  border-top: 0.5px solid #0000002f;
+  /* background-color: #7ec01cd4; */
+  display: grid;
+  align-items: center;
+  grid-template-columns: 1fr 1fr 1fr;
+  text-align: center;
+  padding: 2em;
+}
+
+/* CONTACT US AND PAYMENT METHOD */
+#contact-us ul {
+  display: inline-block;
+}
+#contact-us ul li {
+  list-style: none;
+  margin-right: 10px;
+}
+#contact-us a {
+  text-decoration: none;
+  color: #000000;
+}
+#contact-us ul li,
+#payment-method svg {
+  margin-top: 10px;
+}
+
+/* CONTACT US AND PAYMENT METHOD */
+#contact-us-title,
+#payment-method-title {
+  font-family: "Kanit", serif;
+  font-weight: 300;
+  font-size: 19px;
+}
+
+/* RIGHTS RESERVED */
+#rights-reserved {
+  /* background-color: red; */
+  display: flex;
+  font-family: "Kanit", serif;
+  font-weight: 300;
+  font-size: 16px;
+  justify-content: center;
+  margin-top: 0.5em;
+}

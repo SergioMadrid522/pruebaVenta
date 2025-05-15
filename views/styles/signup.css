@@ -2,48 +2,23 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  /*   outline: 1px solid red; */
+}
+body {
+  display: grid;
+  min-height: 100dvh;
+  grid-template-rows: auto 1fr auto;
 }
 
-html, body {
-  height: 100%;
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-}
-
-/* Header Styles */
-#login-container {
-  box-sizing: border-box;
-  background-color: #ffffff;
-  padding: 2.5em;
-  display: flex;
-  justify-content: center;
-}
-#login-container ul {
-  display: flex;
-  justify-content: center;
-  list-style: none;
-  font-size: 20px;
-  width: 90%;
-}
-#login-container li {
-  display: inline-block;
-}
-#login-container li a {
-  text-decoration: none;
-  color: #000000;
-}
-
-/* Main Styles */
+/* MAIN STYLES*/
 main {
-  margin: auto auto;
+  margin: auto;
 }
 #wrap {
   display: flex;
   border: 1px solid #0000002f;
   border-radius: 10px;
   position: relative;
-
 }
 #sign-in-container {
   background-color: transparent;
@@ -56,12 +31,11 @@ main {
   padding-bottom: 1.5em;
   width: 100%;
 }
-#form-container {
-  padding: 1.5em;
-  /* background-color: red; */
-}
+/* #form-container {
+  padding: 1em;
+} */
 .inputs input {
-  padding: .5em;
+  padding: 0.5em;
   font-size: 16px;
   width: 100%;
   margin-bottom: 1em;
@@ -69,23 +43,24 @@ main {
   border-right: none;
   border-left: none;
 }
-.inputs input[type="email"]:focus, 
-.inputs input[type="password"]:focus {
-  outline: 0;
+.inputs input:focus {
+  outline: none;
 }
-.sign-in-up-button {
-  padding: 1em;
-}
+
 .sign-up-button button {
   cursor: pointer;
   border-radius: 5px;
   font-size: 18px;
-  padding: 5px;
+  padding: 7px;
   width: 75%;
-  letter-spacing: .5px;
-  border:  1px solid #0000002f;
+  letter-spacing: 0.5px;
+  border: 1px solid #0000002f;
 }
-.sign-in-up-button a { 
+.sign-up-button,
+.sign-in-link {
+  padding: 1em;
+}
+.sign-in-link a {
   text-decoration: none;
   color: #168fe5;
   font-size: 18px;
@@ -99,53 +74,13 @@ main {
   width: 80%;
   height: 100%;
 }
-/* FOOTER Styles */
-footer {
-  border-top: .5px solid #0000002f;
-  text-align: center;
-}
-footer div {
-  width: 100%;
-  display: flex;
-  text-align: center;
-  justify-content: center;
-  padding: 1em;
-}
-#contact-us a {
-  text-decoration: none;
-  color: #000000;
-}
-#contact-us ul{ 
-  width: 100%;
-}
-#contact-us li {
-  margin-right: 15px;
-  display: inline-block;
-} 
-#contact-us p {
-  font-family: "Kanit", serif;
-  font-weight: 300;
-  font-size: 19px;
-  margin-bottom: 1em;
-}
-#contact-us,
-#payment-method {
-  display: block;
 
-}
-
-#rights-reserved ul {
-  list-style: none;
-}
-#rights-reserved li {
-  margin-top: 1.5em;
-}
-
-@media screen and (max-width:900px) {
+/* MEDIA QUERIES */
+@media screen and (max-width: 900px) {
   #sign-in-container {
     width: 500px;
   }
-  #image-cover, 
+  #image-cover,
   #image-cover img {
     display: none;
   }
@@ -159,7 +94,7 @@ footer div {
   }
   #image-cover {
     display: none;
-    width: 5px ;
+    width: 5px;
   }
   #image-cover img {
     display: none;
@@ -167,17 +102,15 @@ footer div {
   }
   footer div {
     display: block;
-    padding: .5em;
+    padding: 0.5em;
   }
   #contact-us li {
     margin: 1.8px;
   }
-  .sign-in-up-button button {
+  .sign-in-link button {
     width: 100%;
   }
-  #rights-reserved ul li{
+  #rights-reserved ul li {
     margin: 0;
   }
 }
-  
-  

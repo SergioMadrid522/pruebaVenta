@@ -1,314 +1,184 @@
-@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@200;400&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@200;400&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@200;400&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@200;400&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  /* outline: 1px solid red; */
 }
 
-#login-container {
-    box-sizing: border-box;
-    background-color: #FFFFFF;
-    padding: 2.5em;
-    display: flex;
-    justify-content: center;
-}
-#login-container ul {
-    display: flex;
-    justify-content:space-between;
-    list-style: none;
-    font-size: 20px;
-    width: 90%;
-}
-#login-container li {
-    display: inline-block;
-}
-#login-container li a {
-    text-decoration: none;
-    color: #000000;
-}
-#login-container svg {
-    width: 30px;
-    height: 30px;
-}
+/* HEADER STYLES */
 #greet-container {
-    background-color: #000000;
+  background-color: #000000;
+  color: #ffffff;
+  padding: 10px;
+  font-family: "Kanit", serif;
+  font-weight: 350;
+  font-style: normal;
+  font-size: 40px;
+  text-align: center;
 }
-
-#greet-container aside {
-    color: #ffffff;
-    padding: 10px;
-    font-family: "Kanit", serif;
-    font-weight: 350;
-    font-style: normal;
-    font-size: 40px;
-    text-align: center;
-}
-
 #stock-container {
-    text-align: center;
-    justify-content: center;
+  color: #000000c1;
+  text-align: center;
+  font-family: "Kanit", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+  padding: 10px;
+  text-align: center;
+  justify-content: center;
+}
+#banner-container img {
+  object-fit: cover;
+  width: 100%;
 }
 
-#stock-container aside {
-    color: #000000c1;
-    text-align: center;
-    font-family: "Kanit", serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 20px;
-    padding: 10px;
-}
-
-#banner-container {
-    text-align: center;
-}
-
-#banner-container div img {
-    object-fit: cover;
-    width: 100%;
-}
-
+/* MAIN STYLE */
 #products-container {
-    justify-content: center;
-    position: relative;
-    margin-left: 15%;
-    text-align: center;
-    width: 70%;
+  justify-content: center;
+  position: relative;
+  margin: auto;
+  text-align: center;
+  width: 85%;
 }
-
 #title {
-    width: auto;
-    text-align: left;
-    padding: 1rem;
+  width: auto;
+  text-align: left;
+  padding: 1rem;
 }
-
 #title h1 {
-    font-family: "Kanit", serif;
-    font-weight: 430;
-    font-style: normal;
-    font-size: 50px;
-    color: #000000c4;
+  font-family: "Kanit", serif;
+  font-weight: 430;
+  font-style: normal;
+  font-size: 50px;
+  color: #000000c4;
 }
-
-.product-card {  
-    /* border: 0.3px solid #0000002f; */
-    display: inline-block;
-    width: 300px;
-    height: 400px;
-    margin-right: 15px;
-    margin-bottom: 10px;
-
+.product-card {
+  /* border: 1px solid #0000002f; */
+  display: inline-block;
+  width: 300px;
+  height: 400px;
+  margin-right: 15px;
+  margin-bottom: 10px;
 }
-
-.product-card:hover {
-/* offset-x | offset-y | blur-radius | color */
-    box-shadow: 3px 3px 15px #0000005c;
-    transition: .3s ease;
-}
-
 .product-card a {
-    text-align: center;
-    justify-content: center;
-    text-decoration: none;
-    /* font-family: "Roboto", serif;
-    font-weight: 400;
-    font-style: normal;
-    color: #000000; */
+  text-align: center;
+  justify-content: center;
+  text-decoration: none;
 }
-
-.product-card a:hover {
-    text-decoration: underline;
-}
-
-.product-card a::after {
-    content: "Funda Case 31 hats - Murakami Thirty One hats";
-    font-family: "Roboto", serif;
-    font-weight: 400;
-    font-style: normal;
-    color: #000000;
-}
-
 .product-card a img {
-    object-fit: cover;
-    text-align: center;
-    justify-content: center;
-    width: 280px;
-    height: 280px;
-    margin-top: 10px;
+  object-fit: cover;
+  text-align: center;
+  justify-content: center;
+  width: 100%;
+  height: 280px;
+  margin-top: 10px;
 }
-
+.product-card:hover {
+  /* offset-x | offset-y | blur-radius | color */
+  box-shadow: 3px 3px 15px #0000005c;
+  transition: 0.3s ease;
+}
+.product-card a:hover {
+  text-decoration: underline;
+}
+.product-name {
+  content: "Funda Case 31 hats - Murakami Thirty One hats";
+  font-family: "Roboto", serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #000000;
+}
+.product-card a img {
+  object-fit: cover;
+  text-align: center;
+  justify-content: center;
+  width: 280px;
+  height: 280px;
+  margin-top: 10px;
+}
 .product-price {
-    /* text-align: left; */
-    padding: 0.5rem;
-    height: 68px;
+  /* text-align: left; */
+  display: block;
+  padding: 0.5rem;
+  height: 68px;
+  font-family: "Kanit", serif;
+  font-weight: 350;
+  font-style: normal;
+  font-size: 25px;
+  color: #000000b6;
 }
-
-.product-price p {
-    font-family: "Kanit", serif;
-    font-weight: 350;
-    font-style: normal;
-    font-size: 25px;
-    color: #000000b6;
-}
-
 .product-card p {
-    margin-top: 6%;
-    justify-content: center;
+  margin-top: 6%;
+  justify-content: center;
 }
-
 #pagination-list {
-    width: 100%;
-    text-align: center;
-    padding: 1.5em;
-    font-size: 18px ;
+  width: 100%;
+  text-align: center;
+  padding: 1.5em;
+  font-size: 18px;
 }
-
 #pagination-list li {
-    display: inline;
-    list-style: none;
-    margin-right: 10px;
+  display: inline;
+  list-style: none;
+  margin-right: 10px;
 }
-
 #pagination-list a {
-    color: #000000;
-    text-decoration: none;
+  color: #000000;
+  text-decoration: none;
 }
-
 #pagination-list a:hover {
-    text-decoration: none;
-    transition: .3s ease;
+  text-decoration: none;
+  transition: 0.3s ease;
 }
 
-footer {
-    border-top: .5px solid #0000002f;
-    width: 100%;
-}
-
-footer div {
-    /* background-color: #7ec01cd4; */
-    position: relative;
-    width: 100%;
-    display: flex;
+/* MEDIAS QUERIES */
+@media screen and (max-width: 900px) {
+  #title {
     text-align: center;
-    justify-content: center;
-    padding: 2em;
-}
-
-#contact-us a {
-    text-decoration: none;
-    color: #000000;
-}
-
-#contact-us  li {
-    margin-right: 10px;
-} 
-
-#contact-us p, 
-#payment-method p {
-    font-family: "Kanit", serif;
-    font-weight: 300;
-    font-size: 19px;
-    margin-bottom: 1em;
-}
-
-#contact-us,
-#payment-method {
-    display: block;
-
-}
-#contact-us li {
-    display: inline-block;
-}
-
-#rights-reserved ul {
-    list-style: none;
-}
-
-#rights-reserved li {
-    justify-content: center;
-    margin-top: .5em;
-}
-
-@media screen and (max-width:900px) {
-    #title {
-        text-align: center;
-    }
-    .product-card {
-        margin: 0;
-    }
-    .product-card a img {
-        width: 100%;
-        object-fit: cover;
-    }
-    #sign-in-container {
-      width: 500px;
-    }
-    #image-cover, 
-    #image-cover img {
-      display: none;
-    }
-    #sign-in-container {
-      border-right: none;
-    }
-    #rights-reserved ul li{
-        margin-top: 0.5em;
-    }
   }
-  @media screen and (max-width: 860px) {
-    #products-container {
-        margin: 0;
-        width: 100%;
-    }
-    #title {
-        text-align: center;
-    }
-
-    .product-card a img {
-        width: 100%;
-        object-fit: cover;
-    }
-    #image-cover {
-      width: 5px;
-    }
-    #image-cover img {
-      display: none;
-      width: 250px;
-    }
-    footer div {
-      display: block;
-      padding: .5em;
-    }
-    #contact-us li {
-      margin: 1.8px;
-    }
-    .sign-in-up-button button {
-      width: 100%;
-    }
-
+  .product-card {
+    margin: 5px;
+  }
+  .product-card a img {
+    width: 95%;
+    object-fit: cover;
+  }
+  #rights-reserved ul li {
+    margin-top: 0.5em;
+  }
+}
+@media screen and (max-width: 860px) {
+  #products-container {
+    margin: 0;
+    width: 100%;
+  }
+  .product-card a img {
+    width: 95%;
+    object-fit: cover;
+  }
+  footer {
+    display: block;
+    padding: 1em;
+  }
+  #contact-us,
+  #payment-method {
+    padding: 1rem 0;
+  }
 }
 
-@media screen and (max-width: 600px){
-    #products-container {
-        margin: 0;
-        width: 100%;
-    }
-    #title {
-        text-align: center;
-    }
-    .product-card {
-        margin: 25px 0;
-        width: 170px;
-        
-    }
-    .product-card a img {
-        margin: 0;
-        width: 100%;
-        object-fit: cover;
-    }
-    #sign-in-container {
-      width: 300px;
-    }
+@media screen and (max-width: 600px) {
+  #products-container {
+    width: 100%;
+  }
+  .product-card {
+    width: 280px;
+  }
+  .product-card a img {
+    width: 95%;
+    object-fit: cover;
+  }
 }
