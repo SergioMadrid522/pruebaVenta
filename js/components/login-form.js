@@ -10,14 +10,11 @@ loginForm.addEventListener("submit", (e) => {
     const storedData = JSON.parse(localStorage.getItem(email.value));
     if (email.value === "" && password.value === "") {
         alert("Llene los campos antes de continuar");
-        error();
+        //error();
         email.style.borderBottom = "2px solid red";
         password.style.borderBottom = "2px solid red";
     } else if (!storedData) {
-        //alert("Introduzca un email valido")
-        Swal.fire(
-
-        );
+        alert("Introduzca un email valido")
         email.style.borderBottom = "2px solid red";
         return
     } else {

@@ -1,0 +1,25 @@
+{
+  "name": "pruebaventa",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "http-server -p 9910"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SergioMadrid522/pruebaVenta.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/SergioMadrid522/pruebaVenta/issues"
+  },
+  "homepage": "https://github.com/SergioMadrid522/pruebaVenta#readme",
+  "devDependencies": {
+    "http-server": "^14.1.1"
+  }
+}
