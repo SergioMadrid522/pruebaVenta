@@ -5,7 +5,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  /* outline: 1px solid red; */
+  /*   outline: 1px solid red; */
 }
 body {
   display: grid;
@@ -169,7 +169,7 @@ input[type="number"] {
 }
 
 /* MEDIAS QUERIES */
-@media screen and (max-width: 766px) {
+@media screen and (max-width: 850px) {
   #wrap {
     display: block;
     width: 100%;
@@ -191,9 +191,9 @@ input[type="number"] {
     border: 1px solid #0000002f;
   }
   #product-description {
-    vertical-align: middle;
+    /* vertical-align: middle; */
     width: 90%;
-    margin: 0 auto;
+    margin: auto;
   }
   #related-products {
     display: flex;
